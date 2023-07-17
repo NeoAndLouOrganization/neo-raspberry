@@ -1,0 +1,23 @@
+{
+  "name": "neo-raspberry",
+  "version": "1.0.0",
+  "description": "https://javascript.plainenglish.io/physical-computing-with-javascript-1-8-lets-get-started-642a9954adb2",
+  "main": "read-temperature-and-humidity.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NeoAndLouOrganization/neo-raspberry.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NeoAndLouOrganization/neo-raspberry/issues"
+  },
+  "homepage": "https://github.com/NeoAndLouOrganization/neo-raspberry#readme",
+  "dependencies": {
+    "dht": "github:niklauslee/dht"
+  }
+}
