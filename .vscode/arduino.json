@@ -1,0 +1,5 @@
+{
+    "board": "arduino:mbed_rp2040:pico",
+    "programmer": "cmsis-dap",
+    "port": "/dev/tty.usbmodem12201"
+}
