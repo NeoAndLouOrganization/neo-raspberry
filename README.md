@@ -61,8 +61,28 @@ This creates a folder with <sketch-name> and <sketch-name.ino>
 
 Here we compile a folder
 
-`$ arduino-cli compile --fqbn arduino:avr:leonardo <sketch-name>`
+`$ arduino-cli compile --fqbn arduino:mbed_rp2040:pico <sketch-name-folder> --build-path <compiled-files-output-path>`
 
 or if we are in the folder
 
-`$ arduino-cli compile --fqbn arduino:avr:leonardo .`
+`$ arduino-cli compile --fqbn arduino:mbed_rp2040:pico .`
+
+## Install library dependencies
+
+Install
+
+`$ arduino-cli lib <lib-name>`
+
+Confirm Library is installed
+
+`$ arduino-cli lib list`
+
+## Uninstall library dependencies
+
+`$ arduino-cli lib uninstall <lib-name>`
+
+## Upload Sketch
+
+Note: Need to specify the input directory for the compiled files via `--input-dir`
+
+`$ arduino-cli upload --port /dev/cu.usbmodem12201 --fqbn arduino:mbed_rp2040:pico . --input-dir lib`
