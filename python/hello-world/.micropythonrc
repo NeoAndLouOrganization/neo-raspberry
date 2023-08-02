@@ -1,0 +1,22 @@
+{
+  "upload": {
+    "port": "/dev/tty.usbmodem112201",
+    "baud": 115200
+  },
+  "serial": {
+    "port": "/dev/tty.usbmodem112201",
+    "baud": 115200
+  },
+  "ignore": {
+    "extensions": [
+      ".micropythonrc"
+    ],
+    "directories": [
+      ".vscode"
+    ]
+  },
+  "tools": {
+    "ampy": "/Users/vvl02/.pyenv/shims/ampy",
+    "rshell": ""
+  }
+}
