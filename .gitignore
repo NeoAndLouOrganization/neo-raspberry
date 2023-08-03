@@ -1,1 +1,4 @@
 **/lib
+**/cert
+**/node_modules
+**/dist
