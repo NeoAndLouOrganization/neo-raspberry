@@ -36,14 +36,14 @@ module.exports = {
     allowedHosts: 'all',
     static: path.join(__dirname, 'dist'),
     compress: true,
-    port: 4000,
+    port: 443,
     host: '0.0.0.0',
     server: {
       type: process.env.HTTPS_DEV_SERVER ? 'https' : 'http',
       options: process.env.HTTPS_DEV_SERVER
         ? {
-            // key: fs.readFileSync('../certs/clients_dev_peacocktv_com.key'),
-            // cert: fs.readFileSync('../certs/clients_dev_peacocktv_com.pem'),
+            key: fs.readFileSync('../certs/vvasylkovskyi_com.key'),
+            cert: fs.readFileSync('../certs/vvasylkovskyi_com.pem'),
           }
         : {},
     },
