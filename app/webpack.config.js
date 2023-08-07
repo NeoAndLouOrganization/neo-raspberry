@@ -33,16 +33,17 @@ module.exports = {
     clean: true,
   },
   devServer: {
-    allowedHosts: ['.peacocktv.com'],
+    allowedHosts: 'all',
     static: path.join(__dirname, 'dist'),
     compress: true,
+    port: 4000,
     host: '0.0.0.0',
     server: {
       type: process.env.HTTPS_DEV_SERVER ? 'https' : 'http',
       options: process.env.HTTPS_DEV_SERVER
         ? {
-            key: fs.readFileSync('./cert/clients_dev_peacocktv_com.key'),
-            cert: fs.readFileSync('./cert/clients_dev_peacocktv_com.pem'),
+            // key: fs.readFileSync('../certs/clients_dev_peacocktv_com.key'),
+            // cert: fs.readFileSync('../certs/clients_dev_peacocktv_com.pem'),
           }
         : {},
     },

@@ -8,8 +8,8 @@
     "posttest": "npm run lint",
     "build": "webpack",
     "watch": "webpack --watch",
-    "start": "webpack serve --open",
-    "start:https": "HTTPS_DEV_SERVER=true webpack serve --port 443",
+    "start": "webpack serve",
+    "start:https": "HTTPS_DEV_SERVER=true webpack serve",
     "compile": "tsc"
   },
   "main": "src/index.tsx",
