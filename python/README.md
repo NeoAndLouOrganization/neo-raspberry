@@ -26,6 +26,18 @@ print("Hello World")
 
 Install Micropython IDE and Microphyon-REPLink, autopep8, Pylance, Python. Follow on with installing all the required dependencies suggested by the extensions.
 
+# Pylance - nice to have
+
+It is nice to have warnings in code highlighted correctly. Pylance does that, but we need to configure it properly. Essentially, Pylance needs to know the path where the projects are installed. Lets make sure this one is correct:
+
+1. Make sure you know the location of your import; you can find it with:
+
+```python
+python
+>>> import modulename
+>>> print(modulename.__file__)
+```
+
 # Create Project
 
 Using Micropython extension we can create a project. On the bottom nav bar in the left corner you can see Micropython. Click on it and dropdown from the top-bar will appear. Select new project. When created, you should see a new folder with `boot.py` and `main.py`
@@ -51,6 +63,10 @@ Note the command bellow does not upload code on board
 
 For that, we need to upload file `main.py`, if it has its name, then microcontroller will run this code everytime it is on by default.
 Simply upload file, and then restart your microcontroller.
+
+## Installing Packages
+
+https://docs.micropython.org/en/latest/reference/packages.html
 
 ## Remove file
 
