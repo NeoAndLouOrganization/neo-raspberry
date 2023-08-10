@@ -36,16 +36,16 @@ Source - https://mikeesto.medium.com/uploading-to-the-raspberry-pi-pico-without-
 
 ## Check file contents
 
-`$ ampy --port /dev/tty.usbmodem112201 ls`
+`$ ampy --port /dev/tty.usbmodem112301 ls`
 
 ## Run code
 
 Note the command bellow does not upload code on board
-`$ ampy --port /dev/tty.usbmodem112201 run main.py`
+`$ ampy --port /dev/tty.usbmodem112301 run main.py`
 
 ## Upload file
 
-`$ ampy --port /dev/tty.usbmodem112201 put main.py`
+`$ ampy --port /dev/tty.usbmodem112301 put main.py`
 
 ## Deploy Code so that it runs on microcontroller.
 
@@ -54,4 +54,8 @@ Simply upload file, and then restart your microcontroller.
 
 ## Remove file
 
-`$ ampy --port /dev/tty.usbmodem112201 rm main.py`
+`$ ampy --port /dev/tty.usbmodem112301 rm main.py`
+
+## Remove Dir
+
+`$ ampy --port /serial/port rmdir /foo/bar`
