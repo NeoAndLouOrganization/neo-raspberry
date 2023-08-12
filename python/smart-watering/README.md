@@ -14,14 +14,24 @@ Furthermore, we are going to connect an RPI to our server, so that we can notify
 
 ## Step 3 - Connect Sensor and Actuator - Water the plant when soil moisture is low
 
-## Step 4 - Build a Web Server
+## Step 4 - Energy - make smart water system portable
 
-## Step 5 - Send Sensor and Actuator events to the Web Server
+## Step 5 - Waterproof raspberry pi, sensor and actuator
 
-## Step 6 - Build a Web Site to visualize data
+## Step 6 - Package - build 3D model of a plastic wrapping
 
-## Step 7 (Extra) - Add manual actions - water plant by click on the web
+## Step 7 - Build a Web Server
 
-## Step 8 (Extra) - Scale to multiple smart watering
+## Step 8 - Send Sensor and Actuator events to the Web Server
 
-## Step 9 (Extra) - Connect with AI
+## Step 9 - Build a Web Site to visualize data
+
+## Step 10 - Add manual actions - water plant by click on the web
+
+## Step 11 - Scale to multiple smart watering
+
+## Step 12 (Optional) - Connect with AI
+
+## Step 13 - Evaluate cost of production
+
+## Step 14 - Go Live - Sale on Amazon
