@@ -1,25 +1,54 @@
 import React from 'react';
 
+import {Host} from '../constants/host';
+import {Path} from '../constants/path';
+
+import './home.scss';
+
 export class Home extends React.Component {
   state = {
     soilMoisture: 0,
+    waterLevel: 0,
+    battery: 0,
+    waterSpent: 0,
+    isOnline: false,
   };
 
-  getSoilMoisture = () => {
-    fetch('https://viktor.clients.dev.peacocktv.com/')
-      .then(response => response.json())
-      .then(json => console.log(json));
+  getDeviceInfo = async (): Promise<void> => {
+    const url = `https://${Host.DEFAULT}${Path.DEVICE_INFO}`;
+
+    const response = await fetch(url);
+    const deviceInfo = await response.json();
+    this.setState({...deviceInfo, isOnline: true});
   };
 
   componentDidMount(): void {
-    this.getSoilMoisture();
+    this.getDeviceInfo();
   }
 
   render(): React.ReactNode {
     return (
       <div>
-        <div>Hello World</div>
-        <div>Soil Moisture is: {this.state.soilMoisture}</div>
+        <div>Soil Moisture: {this.state.soilMoisture}</div>
+        <div>Water Level: {this.state.waterLevel}</div>
+        <div>Battery: {this.state.battery}</div>
+        <div>Total Water Spent: {this.state.waterSpent}</div>
+        <div>Network Status: {this.state.isOnline}</div>
+        <div className="mt-4">
+          <button>Sleep</button>
+        </div>
+        <div>
+          <button>Reboot</button>
+        </div>
+        <div>
+          <button>Enable Water Pump</button>
+        </div>
+        <div>
+          <button>Disable Water Pump</button>
+        </div>
+        <div>
+          <button>Activate Water Pump</button>
+        </div>
       </div>
     );
   }
