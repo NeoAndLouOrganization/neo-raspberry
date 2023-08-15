@@ -4,9 +4,11 @@ import express from "express";
 import dotenv from "dotenv";
 import { Server as HttpServer } from "http";
 import { Server as HttpsServer } from "https";
-import { deviceInfoRouter } from "./routes/device-info-router";
 import getServer from "./utils/getServer";
+
+import { deviceInfoRouter } from "./routes/device-info-router";
 import { soilMoistureRouter } from "./routes/soil-moisture-router";
+import { waterPumpRouter } from "./routes/water-pump-router";
 
 dotenv.config();
 
@@ -18,6 +20,8 @@ app.use(cors());
 
 app.use(deviceInfoRouter);
 app.use(soilMoistureRouter);
+app.use(waterPumpRouter);
+
 const server: HttpsServer | HttpServer = getServer(app);
 
 server.on("listening", () => {

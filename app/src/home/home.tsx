@@ -26,6 +26,30 @@ export class Home extends React.Component {
     this.getDeviceInfo();
   }
 
+  activateWaterPump = async () => {
+    const url = `https://${Host.DEFAULT}${Path.ACTIVATE_WATER_PUMP}`;
+
+    const response = await fetch(url, {method: 'POST'});
+    const data = await response.json();
+    console.log('ActivateWaterPump');
+  };
+
+  enableWaterPump = () => {
+    console.log('EnableWaterPump');
+  };
+
+  disableWaterPump = () => {
+    console.log('DisableWaterPump');
+  };
+
+  reboot = () => {
+    console.log('reboot');
+  };
+
+  sleep = () => {
+    console.log('sleep');
+  };
+
   render(): React.ReactNode {
     return (
       <div>
@@ -35,19 +59,19 @@ export class Home extends React.Component {
         <div>Total Water Spent: {this.state.waterSpent}</div>
         <div>Network Status: {this.state.isOnline}</div>
         <div className="mt-4">
-          <button>Sleep</button>
+          <button onClick={this.sleep}>Sleep</button>
         </div>
         <div>
-          <button>Reboot</button>
+          <button onClick={this.reboot}>Reboot</button>
         </div>
         <div>
-          <button>Enable Water Pump</button>
+          <button onClick={this.enableWaterPump}>Enable Water Pump</button>
         </div>
         <div>
-          <button>Disable Water Pump</button>
+          <button onClick={this.disableWaterPump}>Disable Water Pump</button>
         </div>
         <div>
-          <button>Activate Water Pump</button>
+          <button onClick={this.activateWaterPump}>Activate Water Pump</button>
         </div>
       </div>
     );
