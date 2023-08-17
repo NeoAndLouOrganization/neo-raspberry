@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="temperature_converter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Celcius" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nS1-QY-fW6">
+                                <rect key="frame" x="116" y="293" width="160" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="PXq-iY-Qqf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="light"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="70d-wT-iuV">
+                                <rect key="frame" x="134" y="347" width="124.33333333333331" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="124.33" id="4aB-D6-0ip"/>
+                                    <constraint firstAttribute="width" constant="120" id="Pwn-vC-Js3"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="WjE-vk-ptp"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Convert to Fº">
+                                    <color key="baseForegroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="ButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="81T-tK-1hE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Result..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WOg-2X-WAF">
+                                <rect key="frame" x="96" y="402" width="200" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="g7Q-jy-cnX"/>
+                                    <constraint firstAttribute="height" constant="40" id="nvl-wq-Avw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.94328010082244873" green="0.53256261055203202" blue="0.17810368017891118" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="nS1-QY-fW6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6ge-2n-gs9"/>
+                            <constraint firstItem="WOg-2X-WAF" firstAttribute="top" secondItem="70d-wT-iuV" secondAttribute="bottom" constant="20" id="I6c-HV-oAR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="70d-wT-iuV" secondAttribute="trailing" constant="20" id="PMT-pi-hMt"/>
+                            <constraint firstItem="70d-wT-iuV" firstAttribute="top" secondItem="nS1-QY-fW6" secondAttribute="bottom" constant="20" id="URi-iD-6QM"/>
+                            <constraint firstItem="70d-wT-iuV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="gyL-mh-GlH"/>
+                            <constraint firstItem="WOg-2X-WAF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jQO-x1-fdz"/>
+                            <constraint firstItem="70d-wT-iuV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oiy-Gr-hcW"/>
+                            <constraint firstItem="nS1-QY-fW6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-120" id="wrQ-c7-zKd"/>
+                            <constraint firstItem="70d-wT-iuV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zS4-45-EI4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="input" destination="nS1-QY-fW6" id="iRw-34-iBt"/>
+                        <outlet property="label" destination="WOg-2X-WAF" id="TEl-dS-dBw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="81.679389312977094" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

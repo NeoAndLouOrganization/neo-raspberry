@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		578370AA2A8D3AC1009498D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578370A92A8D3AC1009498D4 /* AppDelegate.swift */; };
+		578370AC2A8D3AC1009498D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578370AB2A8D3AC1009498D4 /* SceneDelegate.swift */; };
+		578370AE2A8D3AC1009498D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578370AD2A8D3AC1009498D4 /* ViewController.swift */; };
+		578370B12A8D3AC1009498D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 578370AF2A8D3AC1009498D4 /* Main.storyboard */; };
+		578370B32A8D3AC3009498D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 578370B22A8D3AC3009498D4 /* Assets.xcassets */; };
+		578370B62A8D3AC3009498D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 578370B42A8D3AC3009498D4 /* LaunchScreen.storyboard */; };
+		578370BE2A8D3C20009498D4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578370BD2A8D3C20009498D4 /* Constants.swift */; };
+		B570DCB26A31404E8C917D93 /* Pods_restful_api.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A834A386FE7D524D55E8850A /* Pods_restful_api.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		578370A62A8D3AC1009498D4 /* restful-api.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "restful-api.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		578370A92A8D3AC1009498D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		578370AB2A8D3AC1009498D4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		578370AD2A8D3AC1009498D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		578370B02A8D3AC1009498D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		578370B22A8D3AC3009498D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		578370B52A8D3AC3009498D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		578370B72A8D3AC3009498D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		578370BD2A8D3C20009498D4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		850336836C246432B9AE0F92 /* Pods-restful-api.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-restful-api.release.xcconfig"; path = "Target Support Files/Pods-restful-api/Pods-restful-api.release.xcconfig"; sourceTree = "<group>"; };
+		A834A386FE7D524D55E8850A /* Pods_restful_api.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_restful_api.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE6C88334BA76014E8B6E8F4 /* Pods-restful-api.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-restful-api.debug.xcconfig"; path = "Target Support Files/Pods-restful-api/Pods-restful-api.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		578370A32A8D3AC1009498D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B570DCB26A31404E8C917D93 /* Pods_restful_api.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0DC49D19AD2D751AE1E9B2F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A834A386FE7D524D55E8850A /* Pods_restful_api.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5783709D2A8D3AC1009498D4 = {
+			isa = PBXGroup;
+			children = (
+				578370A82A8D3AC1009498D4 /* restful-api */,
+				578370A72A8D3AC1009498D4 /* Products */,
+				C5CC5144E3C1FFB286868C01 /* Pods */,
+				0DC49D19AD2D751AE1E9B2F7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		578370A72A8D3AC1009498D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				578370A62A8D3AC1009498D4 /* restful-api.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		578370A82A8D3AC1009498D4 /* restful-api */ = {
+			isa = PBXGroup;
+			children = (
+				578370A92A8D3AC1009498D4 /* AppDelegate.swift */,
+				578370AB2A8D3AC1009498D4 /* SceneDelegate.swift */,
+				578370AD2A8D3AC1009498D4 /* ViewController.swift */,
+				578370AF2A8D3AC1009498D4 /* Main.storyboard */,
+				578370B22A8D3AC3009498D4 /* Assets.xcassets */,
+				578370B42A8D3AC3009498D4 /* LaunchScreen.storyboard */,
+				578370B72A8D3AC3009498D4 /* Info.plist */,
+				578370BD2A8D3C20009498D4 /* Constants.swift */,
+			);
+			path = "restful-api";
+			sourceTree = "<group>";
+		};
+		C5CC5144E3C1FFB286868C01 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE6C88334BA76014E8B6E8F4 /* Pods-restful-api.debug.xcconfig */,
+				850336836C246432B9AE0F92 /* Pods-restful-api.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		578370A52A8D3AC1009498D4 /* restful-api */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 578370BA2A8D3AC3009498D4 /* Build configuration list for PBXNativeTarget "restful-api" */;
+			buildPhases = (
+				790DE0B6D48704403EE69F5C /* [CP] Check Pods Manifest.lock */,
+				578370A22A8D3AC1009498D4 /* Sources */,
+				578370A32A8D3AC1009498D4 /* Frameworks */,
+				578370A42A8D3AC1009498D4 /* Resources */,
+				E6FEAABD58DD9854470E678F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "restful-api";
+			productName = "restful-api";
+			productReference = 578370A62A8D3AC1009498D4 /* restful-api.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5783709E2A8D3AC1009498D4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					578370A52A8D3AC1009498D4 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 578370A12A8D3AC1009498D4 /* Build configuration list for PBXProject "restful-api" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5783709D2A8D3AC1009498D4;
+			productRefGroup = 578370A72A8D3AC1009498D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				578370A52A8D3AC1009498D4 /* restful-api */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		578370A42A8D3AC1009498D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				578370B62A8D3AC3009498D4 /* LaunchScreen.storyboard in Resources */,
+				578370B32A8D3AC3009498D4 /* Assets.xcassets in Resources */,
+				578370B12A8D3AC1009498D4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		790DE0B6D48704403EE69F5C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-restful-api-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6FEAABD58DD9854470E678F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-restful-api/Pods-restful-api-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-restful-api/Pods-restful-api-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-restful-api/Pods-restful-api-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		578370A22A8D3AC1009498D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				578370AE2A8D3AC1009498D4 /* ViewController.swift in Sources */,
+				578370AA2A8D3AC1009498D4 /* AppDelegate.swift in Sources */,
+				578370AC2A8D3AC1009498D4 /* SceneDelegate.swift in Sources */,
+				578370BE2A8D3C20009498D4 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		578370AF2A8D3AC1009498D4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				578370B02A8D3AC1009498D4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		578370B42A8D3AC3009498D4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				578370B52A8D3AC3009498D4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		578370B82A8D3AC3009498D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		578370B92A8D3AC3009498D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		578370BB2A8D3AC3009498D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE6C88334BA76014E8B6E8F4 /* Pods-restful-api.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 847ZSGQZ32;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "restful-api/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "NeoAndLouOrganization.restful-api";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		578370BC2A8D3AC3009498D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 850336836C246432B9AE0F92 /* Pods-restful-api.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 847ZSGQZ32;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "restful-api/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "NeoAndLouOrganization.restful-api";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		578370A12A8D3AC1009498D4 /* Build configuration list for PBXProject "restful-api" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				578370B82A8D3AC3009498D4 /* Debug */,
+				578370B92A8D3AC3009498D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		578370BA2A8D3AC3009498D4 /* Build configuration list for PBXNativeTarget "restful-api" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				578370BB2A8D3AC3009498D4 /* Debug */,
+				578370BC2A8D3AC3009498D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5783709E2A8D3AC1009498D4 /* Project object */;
+}

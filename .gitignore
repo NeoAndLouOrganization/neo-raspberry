@@ -2,3 +2,5 @@
 **/certs
 **/node_modules
 **/dist
+
+**/Pods

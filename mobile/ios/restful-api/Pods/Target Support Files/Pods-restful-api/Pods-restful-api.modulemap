@@ -1,0 +1,6 @@
+framework module Pods_restful_api {
+  umbrella header "Pods-restful-api-umbrella.h"
+
+  export *
+  module * { export * }
+}
