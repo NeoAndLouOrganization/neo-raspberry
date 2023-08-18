@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const fs = require('fs');
 
 module.exports = {
@@ -38,6 +39,14 @@ module.exports = {
       title: 'Main',
       // Load a custom template (lodash by default)
       template: 'index.html',
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: path.resolve(__dirname, './static'),
+          to: path.join(__dirname, 'dist/static'),
+        },
+      ],
     }),
   ],
   output: {

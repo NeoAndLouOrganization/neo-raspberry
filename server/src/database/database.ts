@@ -1,5 +1,5 @@
 const database = {
-  soilMoisture: "0",
+  soilMoisture: "20",
   waterLevel: "0",
   battery: "2",
   waterSpent: "1",

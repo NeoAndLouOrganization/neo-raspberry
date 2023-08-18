@@ -1,15 +1,13 @@
 import React from 'react';
 import {Home} from './home/home';
 
-import './App.css';
+import './App.scss';
 
 function App() {
   return (
     <React.Fragment>
       <div className="App">
-        <header className="App-header">
-          <Home />
-        </header>
+        <Home />
       </div>
     </React.Fragment>
   );

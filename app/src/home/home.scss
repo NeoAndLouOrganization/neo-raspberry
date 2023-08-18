@@ -1,4 +1,42 @@
+@import "../common-css/colors.scss";
 
 .mt-4 {
     margin-top: 2rem;
+}
+
+.App-header {
+    background: $blue-light;
+    padding: 20px 15px;
+
+    .title {
+        color: white;
+        font-size: 18px;
+        margin-top: 0;
+    }
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: $blue-white;
+    height: 100vh;
+}
+
+.cta-area__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.content__wrapper, .cta-area__wrapper {
+    padding: 0 15px;
+}
+
+.content__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }

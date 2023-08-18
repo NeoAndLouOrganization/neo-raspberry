@@ -3,7 +3,13 @@ import React from 'react';
 import {Host} from '../constants/host';
 import {Path} from '../constants/path';
 
+import {CTAButton, CtaType} from '../cta-button/cta-button';
+import {InfoCard} from '../info-card/info-card';
+import {Checkbox} from '../checkbox/checkbox';
+import {Header} from '../header/header';
+
 import './home.scss';
+import {HeroPot} from '../hero-pot/hero-pot';
 
 export class Home extends React.Component {
   state = {
@@ -12,6 +18,7 @@ export class Home extends React.Component {
     battery: 0,
     waterSpent: 0,
     isOnline: false,
+    enableAutomaticWatering: false,
   };
 
   getDeviceInfo = async (): Promise<void> => {
@@ -50,28 +57,51 @@ export class Home extends React.Component {
     console.log('sleep');
   };
 
+  handleAutomaticWateringChange = (event: any) => {
+    this.setState({enableAutomaticWatering: event.target.checked});
+  };
+
   render(): React.ReactNode {
     return (
-      <div>
-        <div>Soil Moisture: {this.state.soilMoisture}</div>
-        <div>Water Level: {this.state.waterLevel}</div>
-        <div>Battery: {this.state.battery}</div>
-        <div>Total Water Spent: {this.state.waterSpent}</div>
-        <div>Network Status: {this.state.isOnline}</div>
-        <div className="mt-4">
-          <button onClick={this.sleep}>Sleep</button>
+      <div className="main-container">
+        <header className="App-header">
+          <div>
+            <Header />
+          </div>
+          <div className="content__header">
+            <div className="content__header--left">
+              <HeroPot icon="./static/potted-plant.png" />
+            </div>
+            <div className="content__header--right">
+              <Checkbox
+                description={'Automatic Watering'}
+                value={this.state.enableAutomaticWatering}
+                handleChange={this.handleAutomaticWateringChange}
+              />
+            </div>
+          </div>
+        </header>
+
+        <div className="content__wrapper">
+          <InfoCard
+            icon="./static/humidity.png"
+            description="Soil Moisture"
+            value={this.state.soilMoisture}
+          />
+          <InfoCard
+            icon="./static/sea-level.png"
+            description="Water Level"
+            value={this.state.waterLevel}
+          />
+          <InfoCard
+            icon="./static/tap.png"
+            description="Water Spent"
+            value={this.state.waterSpent}
+          />
         </div>
-        <div>
-          <button onClick={this.reboot}>Reboot</button>
-        </div>
-        <div>
-          <button onClick={this.enableWaterPump}>Enable Water Pump</button>
-        </div>
-        <div>
-          <button onClick={this.disableWaterPump}>Disable Water Pump</button>
-        </div>
-        <div>
-          <button onClick={this.activateWaterPump}>Activate Water Pump</button>
+        <div className="cta-area__wrapper">
+          <CTAButton buttonText={'Sleep'} type={CtaType.SECONDARY} />
+          <CTAButton buttonText={'Water Now'} type={CtaType.PRIMARY} />
         </div>
       </div>
     );
