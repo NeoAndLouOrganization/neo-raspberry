@@ -6,7 +6,7 @@ Furthermore, we are going to connect an RPI to our server, so that we can notify
 
 ## Blueprint
 
-![Alt text](image-1.png)
+![Alt text](documentation/blueprint.png)
 
 ## Hardware requirements
 
@@ -14,7 +14,7 @@ Furthermore, we are going to connect an RPI to our server, so that we can notify
 
 ## Step 1 - Read Soil Moisture
 
-![Alt text](image-2.png)
+![Alt text](documentation/soil-moisture-sensor-experience.png)
 
 ## Step 2 - Build the Water Pump
 
@@ -108,7 +108,7 @@ Need to think of ways to recharge the battery/power it via solar panel etc.
 
 ### Initial Sketch
 
-![Alt text](image.png)
+![Alt text](documentation/mobile-app-sketch.png)
 
 ### Initial Figma Design
 
