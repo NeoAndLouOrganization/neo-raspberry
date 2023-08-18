@@ -4,11 +4,17 @@ This project describes how to build an automated watering system which will wate
 
 Furthermore, we are going to connect an RPI to our server, so that we can notify a user about moisture reading in real time.
 
+## Blueprint
+
+![Alt text](image-1.png)
+
 ## Hardware requirements
 
 ## Software requirements
 
 ## Step 1 - Read Soil Moisture
+
+![Alt text](image-2.png)
 
 ## Step 2 - Build the Water Pump
 
@@ -78,14 +84,44 @@ Need to think of ways to recharge the battery/power it via solar panel etc.
 
 ## Step 9 - Build a Web Site/Landing page
 
-## Step 10 - Scale to multiple smart watering
+## Step 10 - Develop Mobile Apps IOS and Android
+
+- For starter proof of concept, the mobile app can be a single page application (SPA).
+
+### Requirements
+
+- The user should be able to visualize one device information such as:
+  - Wifi connection
+  - battery level
+  - soil moisture
+  - water level
+  - amount of water spent
+- The user should be able to perform a set of actions such as:
+  - activate water pump manually for watering
+  - disable water pump permanently
+  - put water pump into enabled/disabled state
+  - reboot device
+  - set device to sleep
+- The user should be able to receive notifications from device such as:
+  - water level is low
+  - battery is low
+
+### Initial Sketch
+
+![Alt text](image.png)
+
+### Initial Figma Design
+
+TODO
+
+## Step 11 - Scale to multiple smart watering
 
 - The Web server should be handle multiple users at the same time. Some authentication system should be set in place.
 - The Web server should handle multiple user sessions at the same time where each user request should be identifiable in a secure way (no unauthorized access to other's data)
 - A user may have several devices, therefore each device should be identifiable by a unique name/id with its respective data such as water-spent, battery energy, and soil moisture, etc.
 
-## Step 11 (Optional) - Connect with AI
+## Step 12 (Optional) - Connect with AI
 
-## Step 12 - Evaluate cost of production
+## Step 13 - Evaluate cost of production
 
-## Step 13 - Go Live - Sale on Amazon
+## Step 14 - Go Live - Sale on Amazon
