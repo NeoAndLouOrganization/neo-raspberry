@@ -49,11 +49,13 @@ Start using a 12V adapter so that the pump works. Portability/energy should be h
 
 Need to think of ways to recharge the battery/power it via solar panel etc.
 
-## Step 5 - Waterproof raspberry pi, sensor and actuator
+## Step 5 (Optional) - Waterproof raspberry pi, sensor and actuator
 
 ### Requirements
 
 - Apply Conformal Coating to the electrical components to ensure that they will resist high levels of humidity
+
+## Step 5 (Optional)
 
 ## Step 6 - Package - build 3D model of a plastic wrapping
 

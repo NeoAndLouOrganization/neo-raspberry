@@ -9,10 +9,10 @@ import fs from "fs";
 
 const getServerOptions = () => ({
   key: fs.readFileSync(
-    path.resolve(__dirname, "../../../certs/vvasylkovskyi_com.key")
+    path.resolve(__dirname, "../../certs/vvasylkovskyi_com.key")
   ),
   cert: fs.readFileSync(
-    path.resolve(__dirname, "../../../certs/vvasylkovskyi_com.pem")
+    path.resolve(__dirname, "../../certs/vvasylkovskyi_com.pem")
   ),
 });
 
