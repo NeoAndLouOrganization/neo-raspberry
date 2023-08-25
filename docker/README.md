@@ -16,6 +16,11 @@ apt install npm
 2. Download and install the Portainer Server container:
    - `docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ee:latest`
 
+## Start/Stop docker via system
+
+1. `$ sudo systemctl start docker`
+2. `$ sudo systemctl stop docker`
+
 ## Nginx with Docker - https://www.digitalocean.com/community/tutorials/how-to-run-nginx-in-a-docker-container-on-ubuntu-22-04
 
 1. Pull Nginx with docker
@@ -51,3 +56,16 @@ apt install npm
    - `$ docker compose up -d`
 7. Check docker compose running
    - `$ docker compose ps`
+
+# Install Docker Images on remote host (VM) - https://stackoverflow.com/questions/44201625/can-i-build-a-docker-container-from-the-cli-against-a-remote-daemon
+
+1. Add an ssh key
+
+   - `$ ssh-add -k ~/.ssh/vvasylkovskyi-ssh`
+
+2. Install docker image to the remote machine
+
+   - `$ docker -H ssh://root@167.71.136.89 build .`
+
+3. Run container on VM
+   - `$ docker run -p 80:80 --name neo-raspberry-nginx -d nginx`
