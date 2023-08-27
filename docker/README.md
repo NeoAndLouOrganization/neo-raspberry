@@ -23,7 +23,7 @@ apt install npm
 
 ## Nginx with Docker - https://www.digitalocean.com/community/tutorials/how-to-run-nginx-in-a-docker-container-on-ubuntu-22-04
 
-1. Pull Nginx with docker
+1. Pull Nginx with dockerp
    - `$ docker pull nginx`
 2. Run Nginx with docker
    - `$ docker run --name docker-nginx -p 80:80 nginx`

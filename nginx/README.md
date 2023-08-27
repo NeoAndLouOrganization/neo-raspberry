@@ -34,3 +34,7 @@ Check where the configuration file is first:
 `nginx -t`
 
 Update file
+
+## Nginx with Docker
+
+- https://chuan-zhang.medium.com/nginx-tutorial-1-start-a-static-web-server-using-nginx-docker-20c8fe71a832
