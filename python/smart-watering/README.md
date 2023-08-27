@@ -10,9 +10,36 @@ Furthermore, we are going to connect an RPI to our server, so that we can notify
 
 ## Hardware requirements
 
+1. Raspberry Pi Pico W (With wifi module)
+2. Capacitive Moisture Sensor - https://www.amazon.es/dp/B07V6M5C4H/ref=mp_s_a_1_5?camp=1789&creative=9325&keywords=capacitive%2Bsoil%2Bmoisture%2Bsensor&linkCode=gs3&linkId=2f85a9b72865575990a06eb0c5f3ad75&qid=1690720890&sr=8-5&th=1&psc=1
+3. Relay -
+4. Water Pump
+
+### Capacity Moisture Sensor
+
+Tutorial - https://peppe8o.com/capacitive-soil-moisture-sensor-with-raspberry-pi-pico-wiring-code-and-calibrating-with-micropython/
+
+![Alt text](documentation/capacitive_moisture_sensor.png)
+
+### Relay
+
+Tutorial - https://arduinogetstarted.com/tutorials/arduino-relay
+
+![Alt text](documentation/relay.png)
+
+### Water Pump
+
+Tutorial - https://arduinogetstarted.com/tutorials/arduino-controls-pump
+
+![Alt text](documentation/water_pump.png)
+
 ## Software requirements
 
 ## Step 1 - Read Soil Moisture
+
+Reading soil moisture code can be found in `python/capacitive-moisture-sensor/main.py`.
+
+More details in tutorial - https://peppe8o.com/capacitive-soil-moisture-sensor-with-raspberry-pi-pico-wiring-code-and-calibrating-with-micropython/
 
 ![Alt text](documentation/soil-moisture-sensor-experience.png)
 
