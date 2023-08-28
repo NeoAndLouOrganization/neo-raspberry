@@ -13,7 +13,7 @@ import { waterPumpRouter } from "./routes/water-pump-router";
 dotenv.config();
 
 const app: express.Application = express();
-const PORT = 4443;
+const PORT = 8084;
 
 app.use(express.json());
 app.use(cors());
