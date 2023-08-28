@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+  nginx:
+    build:
+      context: .
+      dockerfile: "TODO"
+    # image: 
+    ports:
+      - "5000:5000"
+  server:
+    build:
+      context: .
+      dockerfile: "TODO"
+    # image: 
+    ports:
+      - "5001:5001"
