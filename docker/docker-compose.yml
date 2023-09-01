@@ -1,16 +1,12 @@
 version: "3.9"
 services:
   nginx:
-    build:
-      context: .
-      dockerfile: "TODO"
-    # image: 
+    image: docker-registry.vvasylkovskyi.com:5000/neo-raspberry-nginx
+    restart: always
     ports:
-      - "5000:5000"
+      - "443:443"
   server:
-    build:
-      context: .
-      dockerfile: "TODO"
-    # image: 
+    image: docker-registry.vvasylkovskyi.com:5000/neo-raspberry-server
+    restart: always
     ports:
-      - "5001:5001"
+      - "8084:8084"

@@ -86,16 +86,68 @@ apt install npm
 
    - `$ docker container stop registry && docker container rm -v registry`
 
-4. Run registry with HTTPS
+## Run registry with HTTPS
+
+- Move the certificates to the VM, and then start docker registry with TLS
 
 ```
    docker run -d \
   --restart=always \
   --name registry \
-  -v "$(pwd)"/certs:/certs \
+  -v /certs:/certs \
   -e REGISTRY_HTTP_ADDR=0.0.0.0:5000 \
   -e REGISTRY_HTTP_TLS_CERTIFICATE=/certs/vvasylkovskyi_com.pem \
   -e REGISTRY_HTTP_TLS_KEY=/certs/vvasylkovskyi_com.key \
   -p 5000:5000 \
   registry:2
 ```
+
+## Restricting Access
+
+- Assumes that TLS is configured.
+- Create a `auth` folder with
+
+```
+docker run --entrypoint htpasswd httpd:2 -Bbn testuser testpassword > auth/htpasswd
+```
+
+```
+docker run -d \
+  -p 5000:5000 \
+  --restart=always \
+  --name registry \
+  -v /auth:/auth \
+  -e "REGISTRY_AUTH=htpasswd" \
+  -e "REGISTRY_AUTH_HTPASSWD_REALM=Registry Realm" \
+  -e REGISTRY_AUTH_HTPASSWD_PATH=/auth/htpasswd \
+  -v /certs:/certs \
+  -e REGISTRY_HTTP_ADDR=0.0.0.0:5000 \
+  -e REGISTRY_HTTP_TLS_CERTIFICATE=/certs/vvasylkovskyi_com.pem \
+  -e REGISTRY_HTTP_TLS_KEY=/certs/vvasylkovskyi_com.key \
+  registry:2
+
+```
+
+### Login into registry
+
+- `$ docker login docker-registry.vvasylkovskyi.com:5000`
+
+# Default Flow of the Docker Image
+
+## On the host
+
+```
+$ docker container stop registry && docker container rm -v registry
+
+$ docker run -d --restart=always --name registry -v /certs:/certs -e REGISTRY_HTTP_ADDR=0.0.0.0:5000 -e REGISTRY_HTTP_TLS_CERTIFICATE=/certs/vvasylkovskyi_com.pem -e REGISTRY_HTTP_TLS_KEY=/certs/vvasylkovskyi_com.key -p 5000:5000 registry:2
+
+$ docker tag neo-raspberry-server 127.0.0.1:5000/neo-raspberry-server
+
+$ docker push 127.0.0.1:5000/neo-raspberry-nginx
+```
+
+## On the client
+
+`docker pull docker-registry.vvasylkovskyi.com:5000/neo-raspberry-nginx`
+
+# TODO - Recipe with Nginx - https://docs.docker.com/registry/recipes/nginx/
