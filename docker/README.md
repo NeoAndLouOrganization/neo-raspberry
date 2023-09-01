@@ -69,3 +69,33 @@ apt install npm
 
 3. Run container on VM
    - `$ docker run -p 80:80 --name neo-raspberry-nginx -d nginx`
+
+# Docker Registry
+
+1. Pull registry image
+
+   - `$ docker run -d -p 5000:5000 --restart=always --name registry -v /mnt/registry:/var/lib/registry registry:2`
+
+2. Tag and push Image to registry
+
+   - `$ docker tag neo-raspberry-nginx docker-registry.vvasylkovskyi.com:5000/neo-raspberry-nginx`
+   - `$ docker push 127.0.0.1:5000/neo-raspberry-nginx`
+   - `$ docker pull docker-registry.vvasylkovskyi.com:5000/neo-raspberry-nginx`
+
+3. Stop Registry
+
+   - `$ docker container stop registry && docker container rm -v registry`
+
+4. Run registry with HTTPS
+
+```
+   docker run -d \
+  --restart=always \
+  --name registry \
+  -v "$(pwd)"/certs:/certs \
+  -e REGISTRY_HTTP_ADDR=0.0.0.0:5000 \
+  -e REGISTRY_HTTP_TLS_CERTIFICATE=/certs/vvasylkovskyi_com.pem \
+  -e REGISTRY_HTTP_TLS_KEY=/certs/vvasylkovskyi_com.key \
+  -p 5000:5000 \
+  registry:2
+```
